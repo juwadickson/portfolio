@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omojuwa-Dickson</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.2-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <p>omojuwa</p>
+            <span class="bar" style="cursor: pointer;" onclick="openNav()">&#9776;</span>
+            <div class="menu" id="nav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="./index.html">HOME</a>
+                <a href="./pages/profile.html">PROFILE</a>
+                <a href="./pages/contact.html">CONTACT</a>
+                <a href="./pages/contact.html" class="hire">Hire Me</a>
+                <a href="https://www.facebook.com/ayoomojuwa"><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        <script>
+            function openNav() {
+              document.getElementById("nav").style.right = "0";
+            }
+            
+            function closeNav() {
+              document.getElementById("nav").style.right = "-100%";
+            }
+            </script>
+
+
+
+        <div class="welcome">
+            <div class="welcome-quote">
+                <a href="" class="typewriter" data-period="2000" data-type='["Hi, I am Dickson, i am a Creative Website Developer"]'>
+                    <span class="wrap"></span>
+                </a>
+                <script>
+                    var TxtType = function(el,toRotate, period){
+                        this.toRotate = toRotate;
+                        this.el = el;
+                        this.loopnum = 0;
+                        this.period = parseInt(period,10)|| 2000;
+                        this.txt = '';
+                        this.tick();
+                        this.isDeleting = false;
+                    };
+                    TxtType.prototype.tick = function(){
+                        var i = this.loopnum % this.toRotate.length;
+                        var fullTxt = this.toRotate[i];
+                        if (this.isDeleting) {
+                            this.txt = fullTxt.substring(0, this.txt.length - 1);
+                        } else {
+                            this.txt = fullTxt.substring(0,this.txt.length + 1);
+                        }
+                        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+                        var that = this;
+                        var delta = 200-Math.random() * 100;
+                        if(this.isDeleting){
+                            delta /= 2;
+                        }
+                        if(!this.isDeleting && this.txt === fullTxt){
+                            delta = this.period;
+                            this.isDeleting = true;
+                        }else if (this.isDeleting && this.txt ===''){
+                            this.isDeleting = false;
+                            this.loopNum++;
+                            delta = 500;
+                        }
+                        setTimeout(function(){
+                            that.tick();
+                        },delta);
+                    };
+                    window.onload = function(){
+                        var elements = document.getElementsByClassName('typewriter');
+                        for(var i=0;i<elements.length;i++){
+                            var toRotate = elements[i].getAttribute('data-type');
+                            var period = elements[i].getAttribute('data-period');
+                            if (toRotate) {
+                                new TxtType(elements[i],JSON.parse(toRotate),period);
+                            }
+                        }
+                    }
+                </script>
+            </div>
+            <div class="welcome-view">
+                <div class="first">
+                    <img src="./images/mine.JPG" alt="" height="100%" width="100%">
+                </div>
+                <div class="second">
+                    <div class="about-me">
+                        <h5>ABOUT ME</h5><br>
+                        <p>My name is <b>Dickson Omojuwa</b>, I am a hardworking and motivated website developer and IT support technician who has acquired 
+                            extensive knowledge in the field at degree level and previous work experience. I have contributed immensely by successfully managing
+                            projects resulting in increased performance and productivity. My work revolves around creating amazing websites. This is my first project and i'd like to think
+                            i am just getting started.</p><br>
+                        <a href="./pages/profile.html">READ DICKSON'S STORY</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services">
+            <div class="desc">
+                <h3 style="text-align: center;">SERVICES</h3>
+                <h4>Be the</h4>
+                <h1>BEST</h1>
+                <h4 class="hea4">You can be</h4>
+            </div>
+            <div class="services1">
+                <i class="fa fa-desktop"></i>
+                <h4>Website Development</h4>
+                <p>I develop creative and beautiful website using
+                    HTML, CSS, PHP, MYSQL, LARAVEL and WORDPRESS</p>
+            </div>
+            <div class="services2">
+                <i class="fa fa-support"></i>
+                <h4>IT Support</h4>
+                <p>Provide technical support, Installation, Configuration and 
+                    troubleshooting of hardware and software
+                </p>
+            </div>
+            <div class="services3">
+                <i class="fa fa-tasks"></i>
+                <h4>Project Management</h4>
+                <p>Leading the work of a team to achieve all project goals
+                    in addition to Planning and monitoring projects</p>
+            </div>
+            <div class="services4">
+                <i class="fa fa-briefcase"></i>
+                <h4>Network Management</h4>
+                <p>Operating, Administering and Managing of data network</p>
+            </div>
+        </div>
+        <div class="works">
+            <h2>My Works</h2>
+            <h6>A SHOWCASE OF DESIGN</h6>
+            <h6>PROJECTS, EXPERIMENT AND DEVELOPMENTS.</h6>
+            <div class="work-list">
+                <div class="work">
+                    <div class="work-pics" id="work-pics-one">
+                        <img src="./images/resume.JPG" alt="" width="100%">
+                    </div>
+                    <div class="work-tag">
+                        <h2 class="work-name" id="resume">Resume Website</h2>
+                        <div class="work-actions"><a href="#">Visit website</a></div>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="work-pics" id="work-pics-two">
+                        <img src="./images/shopmora.JPG" alt="" width="100%">
+                    </div>
+                    <div class="work-tag">
+                        <h2 class="work-name" id="resume">E Commerce Website</h2>
+                        <div class="work-actions"><a href="#">Visit website</a></div>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="work-pics" id="work-pics-three">
+                        <img src="./images/elearning.JPG" alt="" width="100%">
+                    </div>
+                    <div class="work-tag">
+                        <h2 class="work-name" id="resume">E Learning Website</h2>
+                        <div class="work-actions"><a href="#">Visit website</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <h2>SKILLS</h2>
+            <div class="skills-lists">
+                <div class="skill">
+                    <div class="skill-pics" id="skill-pics-one">
+                        <img src="./images/html5.jpeg" alt="" width="100%">
+                    </div>
+                    <div class="skill-tag">
+                        <h3>HTML5</h3>
+                        <i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-pics" id="skill-pics-one">
+                        <img src="./images/css3.jpeg" alt="" width="100%">
+                    </div>
+                    <div class="skill-tag">
+                        <h3>CSS3</h3>
+                        <i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-pics" id="skill-pics-one">
+                        <img src="./images/javascript.png" alt="" width="100%">
+                    </div>
+                    <div class="skill-tag">
+                        <h3>JAVASCRIPT</h3>
+                        <i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-pics" id="skill-pics-one">
+                        <img src="./images/php.jpeg" alt="" width="100%">
+                    </div>
+                    <div class="skill-tag">
+                        <h3>PHP</h3>
+                        <i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" ></i><i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-pics" id="skill-pics-one">
+                        <img src="./images/mysql.jpeg" alt="" width="100%">
+                    </div>
+                    <div class="skill-tag">
+                        <h3>MYSQL</h3>
+                        <i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-pics" id="skill-pics-one">
+                        <img src="./images/wordpress.jpeg" alt="" width="100%">
+                    </div>
+                    <div class="skill-tag">
+                        <h3>WORDPRESS</h3>
+                        <i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-pics" id="skill-pics-one">
+                        <img src="./images/msoffice.jpeg" alt="" width="100%">
+                    </div>
+                    <div class="skill-tag">
+                        <h3>MS OFFICES</h3>
+                        <i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-pics" id="skill-pics-one">
+                        <img src="./images/python.jpeg" alt="" width="100%">
+                    </div>
+                    <div class="skill-tag">
+                        <h3>PYTHON</h3>
+                        <i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+    <footer id="footer">
+        <div class="footer1">
+            <div class="footer1-contact">
+                <h4>Contact info</h4>
+                <table>
+                    <tr>
+                        <td><i class="fa fa-map-marker"></i></td>
+                        <td>
+                            <h5>Address:</h5>
+                            <p>Lagos, Nigeria</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-phone"></i></td>
+                        <td>
+                            <h5>Phone:</h5>
+                            <p>+2349025311514</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-envelope"></i></td>
+                        <td>
+                            <h5>Email:</h5>
+                            <p>dicksonomojuwa@gmail.com</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-link"></i></td>
+                        <td>
+                            <h5>Website:</h5>
+                            <p></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="useful-links">
+                <h4>Useful links</h4>
+                <ol>
+                    <li><a href="./pages/profile.html">Profile</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                </ol>
+            </div>
+            <div class="follow-us">
+                <h4>Social media links</h4>
+                <a href="https://web.facebook.com/ayoomojuwa"><i class="fa fa-facebook"></i></a>
+                <a href="http://"><i class="fa fa-instagram"></i></a>
+                <a href="http://"><i class="fa fa-twitter"></i></a>
+                <a href="http://"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="rights">
+            <p>&#169; | Dickson omojuwa | All rights reserved</p>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

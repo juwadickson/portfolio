@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omojuwa-Dickson</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.2-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <p>omojuwa</p>
+            <span class="bar" style="cursor: pointer;" onclick="openNav()">&#9776;</span>
+            <div class="menu" id="nav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="../index.html">HOME</a>
+                <a href="../pages/profile.html">PROFILE</a>
+                <a href="../pages/contact.html">CONTACT</a>
+                <a href="../pages/contact.html" class="hire">Hire Me</a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        <script>
+            function openNav() {
+              document.getElementById("nav").style.right = "0";
+            }
+            
+            function closeNav() {
+              document.getElementById("nav").style.right = "-100%";
+            }
+            </script>
+
+
+
+        <div class="profile-pics">
+            <img src="../images/mine.JPG" alt="" width="100%" height="100%">
+            <h4>Dickson Omojuwa Ayorinde</h4>
+            <h5>Website Developer</h5>
+        </div>
+        <div class="profile">
+            <div class="profile-summary" onclick="viewDetails()">
+                <div class="profile-summary-heading">
+                    <h5>PROFILE SUMMARY</h5>
+                    <i class="view" id="view"><b><i class="fa fa-caret-down"></i></b></i>
+                    <i class="hide" id="hide"><b><i class="fa fa-caret-up"></i></b></i>
+                </div>
+                <div class="profile-summary-det" id="profile-summary-det">
+                    <div class="profile-summary-details">
+                        <div class="profile-summary-det-first">
+                            <table>
+                                <tr>
+                                    <td><h4>Address:</h4></td>
+                                    <td>Lagos, Nigeria</td>
+                                </tr>
+                                <tr>
+                                    <td><h4>D.O.B:</h4></td>
+                                    <td>April 6, 1996</td>
+                                </tr>
+                                <tr>
+                                    <td><h4>Mobile:</h4></td>
+                                    <td><b style="color: blue;">+234-902-531-1514</b></td>
+                                </tr>
+                                <tr>
+                                    <td><h4>Email:</h4></td>
+                                    <td><b style="color: blue;">dicksonomojuwa@gmail.com</b></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><a class="download" download="/doc/dickson-resume-pdf.pdf">Download CV</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="profile-summary-det-second">
+                            <table>
+                                <tr>
+                                    <td><h4>Gender:</h4></td>
+                                    <td>Male</td>
+                                </tr>
+                                <tr>
+                                    <td><h4>Languages:</h4></td>
+                                    <td>English and Yoruba</td>
+                                </tr>
+                                <tr>
+                                    <td><h4>Programming Languages:</h4></td>
+                                    <td><b style="color: blue;">HTML, CSS, JAVASCRIPT, PHP, MYSQL</b></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function viewDetails() {
+                        var view = document.getElementById("profile-summary-det");
+                        var hide_sign = document.getElementById("hide");
+                        var view_sign = document.getElementById("view");
+                        if (view.style.display == "none") {
+                            view.style.display = "block";
+                            view_sign.style.display = "none";
+                            hide_sign.style.display = "block";
+                        }else{
+                            view.style.display = "none";
+                            view_sign.style.display = "block";
+                            hide_sign.style.display = "none";
+                        }
+                    }
+                    
+                </script>
+            </div>
+            <div class="bio-sect">
+                <div class="bio-sect-heading" onclick="viewDetails1()">
+                    <h5>EXPERIENCE</h5>
+                    <i class="view" id="view1"><b><i class="fa fa-caret-down"></i></b></i>
+                    <i class="hide" id="hide1"><b><i class="fa fa-caret-up"></i></b></i>
+                </div>
+                <div class="bio-sect-details" id="bio-sect-details-1">
+                    <h5>WEBSITE DEVELOPER</h5>
+                    <p>Mabisoft, Lagos</p><br>
+                    <b>+</b> Design website <br><br>
+
+                    <h5>INDEPENDENT MONITOR</h5>
+                    <p>World Health Organization, Enugu (Jan. 2021- Jan. 2021)</p><br>
+                    <b>+</b> Monitored the Yellow Fever Vaccination Campaign in ISI-UZO local government, Enugu state <br>
+                    <b>+</b> Analyzed and reported data collected from sampled household <br>
+                    <b>+</b> Managed quality assurance program including on=site evaluations and customer survey <br><br>
+
+                    <h5>PRESIDING OFFICER</h5>
+                    <p>The Independent National Election Commission, Enugu (Nov. 2020- Dec. 2020)</p><br>
+                    <b>+</b> Supervised the election officials at the polling unit and coordinated activities at the voting point. <br>
+                    <b>+</b> Verified and authenticated the voters using Smart Card Reader.<br><br>
+
+                    <h5>IT SUPPORT ASSISTANT</h5>
+                    <p>Newgate Medical Service, Ikorodu, Lagos (Jun. 2018- Nov. 2018)</p><br>
+                    <b>+</b> Troubleshot and resolved hardware, software and network issues. <br>
+                    <b>+</b> Managed high level of call flow and responded to software and hardware technical 
+                    support needs to ensure staff’s satisfaction <br>
+                    <b>+</b> Trained end users with software, hardware and network standards and use processes.
+                    <br><br>
+                </div>
+                <script>
+                    function viewDetails1() {
+                        var view = document.getElementById("bio-sect-details-1");
+                        var hide_sign = document.getElementById("hide1");
+                        var view_sign = document.getElementById("view1");
+                        if (view.style.display == "none") {
+                            view.style.display = "block";
+                            view_sign.style.display = "none";
+                            hide_sign.style.display = "block";
+                        }else{
+                            view.style.display = "none";
+                            view_sign.style.display = "block";
+                            hide_sign.style.display = "none";
+                        }
+                    }
+                    
+                </script>
+            </div>
+            <div class="bio-sect">
+                <div class="bio-sect-heading" onclick="viewDetails2()">
+                    <h5>EDUCATION</h5>
+                    <i class="view" id="view2"><b><i class="fa fa-caret-down"></i></b></i>
+                    <i class="hide" id="hide2"><b><i class="fa fa-caret-up"></i></b></i>
+                </div>
+                <div class="bio-sect-details" id="bio-sect-details-2">
+                    <h5>THE FEDERAL UNIVERSITY OF TECHNOLOGY, AKURE</h5>
+                    <p>2014-2019</p>
+                    <p>Computer Science (Second Class Upper)</p><br>
+
+                </div>
+                <script>
+                    function viewDetails2() {
+                        var view = document.getElementById("bio-sect-details-2");
+                        var hide_sign = document.getElementById("hide2");
+                        var view_sign = document.getElementById("view2");
+                        if (view.style.display == "none") {
+                            view.style.display = "block";
+                            view_sign.style.display = "none";
+                            hide_sign.style.display = "block";
+                        }else{
+                            view.style.display = "none";
+                            view_sign.style.display = "block";
+                            hide_sign.style.display = "none";
+                        }
+                    }
+                    
+                </script>
+            </div>
+            <div class="bio-sect">
+                <div class="bio-sect-heading" onclick="viewDetails3()">
+                    <h5>ACHIEVEMENTS</h5>
+                    <i class="view" id="view3"><b><i class="fa fa-caret-down"></i></b></i>
+                    <i class="hide" id="hide3"><b><i class="fa fa-caret-up"></i></b></i>
+                </div>
+                <div class="bio-sect-details" id="bio-sect-details-3">
+                    <b>+</b> Received 2016/2017 NNPC/Chevron JV National Scholarship award <br>
+                    <b>+</b> Awarded First Bank Nigeria Plc. Prize for being 2d Best Graduating Student in the 
+                    Department of Computer Science. <br><br>
+
+                </div>
+                <script>
+                    function viewDetails3() {
+                        var view = document.getElementById("bio-sect-details-3");
+                        var hide_sign = document.getElementById("hide3");
+                        var view_sign = document.getElementById("view3");
+                        if (view.style.display == "none") {
+                            view.style.display = "block";
+                            view_sign.style.display = "none";
+                            hide_sign.style.display = "block";
+                        }else{
+                            view.style.display = "none";
+                            view_sign.style.display = "block";
+                            hide_sign.style.display = "none";
+                        }
+                    }
+                    
+                </script>
+            </div>
+            <div class="bio-sect">
+                <div class="bio-sect-heading" onclick="viewDetails5()">
+                    <h5>INTERESTS</h5>
+                    <i class="view" id="view5"><b><i class="fa fa-caret-down"></i></b></i>
+                    <i class="hide" id="hide5"><b><i class="fa fa-caret-up"></i></b></i>
+                </div>
+                <div class="bio-sect-details" id="bio-sect-details-5">
+                    <b>+</b> Networking, Website development and Football <br>
+                </div>
+                <script>
+                    function viewDetails5() {
+                        var view = document.getElementById("bio-sect-details-5");
+                        var hide_sign = document.getElementById("hide5");
+                        var view_sign = document.getElementById("view5");
+                        if (view.style.display == "none") {
+                            view.style.display = "block";
+                            view_sign.style.display = "none";
+                            hide_sign.style.display = "block";
+                        }else{
+                            view.style.display = "none";
+                            view_sign.style.display = "block";
+                            hide_sign.style.display = "none";
+                        }
+                    }
+                    
+                </script>
+            </div>
+            <div class="bio-sect">
+                <div class="bio-sect-heading" onclick="viewDetails4()">
+                    <h5>SKILLS</h5>
+                    <i class="view" id="view4"><b><i class="fa fa-caret-down"></i></b></i>
+                    <i class="hide" id="hide4"><b><i class="fa fa-caret-up"></i></b></i>
+                </div>
+                <div class="bio-sect-details skills" id="bio-sect-details-4">
+                    <div class="skills-lists">
+                        <div class="skill">
+                            <div class="skill-pics" id="skill-pics-one">
+                                <img src="../images/html5.jpeg" alt="" width="100%">
+                            </div>
+                            <div class="skill-tag">
+                                <h3>HTML5</h3>
+                                <i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-pics" id="skill-pics-one">
+                                <img src="../images/css3.jpeg" alt="" width="100%">
+                            </div>
+                            <div class="skill-tag">
+                                <h3>CSS3</h3>
+                                <i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-pics" id="skill-pics-one">
+                                <img src="../images/javascript.png" alt="" width="100%">
+                            </div>
+                            <div class="skill-tag">
+                                <h3>JAVASCRIPT</h3>
+                                <i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-pics" id="skill-pics-one">
+                                <img src="../images/php.jpeg" alt="" width="100%">
+                            </div>
+                            <div class="skill-tag">
+                                <h3>PHP</h3>
+                                <i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" ></i><i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-pics" id="skill-pics-one">
+                                <img src="../images/mysql.jpeg" alt="" width="100%">
+                            </div>
+                            <div class="skill-tag">
+                                <h3>MYSQL</h3>
+                                <i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-pics" id="skill-pics-one">
+                                <img src="../images/wordpress.jpeg" alt="" width="100%">
+                            </div>
+                            <div class="skill-tag">
+                                <h3>WORDPRESS</h3>
+                                <i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-pics" id="skill-pics-one">
+                                <img src="../images/msoffice.jpeg" alt="" width="100%">
+                            </div>
+                            <div class="skill-tag">
+                                <h3>MS OFFICES</h3>
+                                <i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-pics" id="skill-pics-one">
+                                <img src="../images/python.jpeg" alt="" width="100%">
+                            </div>
+                            <div class="skill-tag">
+                                <h3>PYTHON</h3>
+                                <i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star" style="color: orangered;"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function viewDetails4() {
+                        var view = document.getElementById("bio-sect-details-4");
+                        var hide_sign = document.getElementById("hide4");
+                        var view_sign = document.getElementById("view4");
+                        if (view.style.display == "none") {
+                            view.style.display = "block";
+                            view_sign.style.display = "none";
+                            hide_sign.style.display = "block";
+                        }else{
+                            view.style.display = "none";
+                            view_sign.style.display = "block";
+                            hide_sign.style.display = "none";
+                        }
+                    }
+                    
+                </script>
+            </div>
+            <div class="bio-sect">
+                <div class="bio-sect-heading" onclick="viewDetails6()">
+                    <h5>GALLERY</h5>
+                    <i class="view" id="view6"><b><i class="fa fa-caret-down"></i></b></i>
+                    <i class="hide" id="hide6"><b><i class="fa fa-caret-up"></i></b></i>
+                </div>
+                <div class="bio-sect-details" id="bio-sect-details-6">
+                    <div class="gallery">
+                        <div class="gallery-row">
+                            <img src="../images/mine.JPG" id="myImg1" alt="" width="100%" height="100%">
+                            <img src="../images/pics/FB_IMG_16287918857772594.jpg" id="myImg2" alt="" width="100%" height="100%">
+                            <img src="../images/pics/FB_IMG_16287919075510948.jpg" id="myImg3" alt="" width="100%"height="100%">
+                        </div>
+                    </div>
+                    <script>
+                        function viewDetails6() {
+                            var view = document.getElementById("bio-sect-details-6");
+                            var hide_sign = document.getElementById("hide6");
+                            var view_sign = document.getElementById("view6");
+                            if (view.style.display == "none") {
+                                view.style.display = "block";
+                                view_sign.style.display = "none";
+                                hide_sign.style.display = "block";
+                            }else{
+                                view.style.display = "none";
+                                view_sign.style.display = "block";
+                                hide_sign.style.display = "none";
+                            }
+                        }
+                        
+                    </script>
+            
+                </div>
+            </div>
+            <div class="modal" id="myModal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img">
+            </div>
+            <script>
+                var modal = document.getElementById("myModal");
+
+                var img1 = document.getElementById("myImg1");
+                var img2 = document.getElementById("myImg2");
+                var img3 = document.getElementById("myImg3");
+                var img4 = document.getElementById("myImg4");
+                var img5 = document.getElementById("myImg5");
+                var img6 = document.getElementById("myImg6");
+                var img7 = document.getElementById("myImg7");
+                var img8 = document.getElementById("myImg8");
+                var img9 = document.getElementById("myImg9");
+                var img10 = document.getElementById("myImg10");
+                var img11 = document.getElementById("myImg11");
+                var img12 = document.getElementById("myImg12");
+                var img13 = document.getElementById("myImg13");
+                var img14 = document.getElementById("myImg14");
+                var img15 = document.getElementById("myImg15");
+
+
+                var modalImg = document.getElementById("img");
+                img1.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                var span = document.getElementsByClassName("close")[0];
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+                img2.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                
+                img3.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                img4.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                img5.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                img6.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                img7.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                img8.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                img9.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                img10.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                img11.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                img12.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                img13.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                img14.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                img15.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+            </script>
+        </div>
+
+
+
+
+
+        <footer id="footer">
+            <div class="footer1">
+                <div class="footer1-contact">
+                    <h4>Contact info</h4>
+                    <table>
+                        <tr>
+                            <td><i class="fa fa-map-marker"></i></td>
+                            <td>
+                                <h5>Address:</h5>
+                                <p>Lagos, Nigeria</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-phone"></i></td>
+                            <td>
+                                <h5>Phone:</h5>
+                                <p>+2349025311514</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-envelope"></i></td>
+                            <td>
+                                <h5>Email:</h5>
+                                <p>dicksonomojuwa@gmail.com</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-link"></i></td>
+                            <td>
+                                <h5>Website:</h5>
+                                <p></p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="useful-links">
+                    <h4>Useful links</h4>
+                    <ol>
+                        <li><a href="./pages/profile.html">Profile</a></li>
+                        <li><a href="./pages/contact.html">Contact</a></li>
+                    </ol>
+                </div>
+                <div class="follow-us">
+                    <h4>Social media links</h4>
+                    <a href="https://web.facebook.com/ayoomojuwa"><i class="fa fa-facebook"></i></a>
+                    <a href="http://"><i class="fa fa-instagram"></i></a>
+                    <a href="http://"><i class="fa fa-twitter"></i></a>
+                    <a href="http://"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="rights">
+                <p>&#169; | Dickson omojuwa | All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
